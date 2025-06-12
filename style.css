@@ -1,0 +1,1651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: rgb(224, 225, 228);
+    /* height: 100vh; */
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.navbar{
+    /* height: 80px; */
+    padding: 15px 10px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon{
+    font-size: 35px;
+    color: rgb(60, 169, 237);
+}
+
+.logo-name{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(82, 79, 79);
+    margin-left: 5px;
+}
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-links li a{
+    padding: 10px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.nav-links li a:hover{  
+    border: 1px solid black;
+    background-color: rgba(243, 245, 247, 0.885);
+    color: black;
+}
+
+.nav-btn{
+    background-color: rgb(63, 63, 232);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: scale 0.2 ease;
+}
+
+.nav-btn a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(63, 63, 232);
+}
+
+.nav-btn:active{
+    scale: 0.9;
+}
+
+.menu-toggle{
+    display: none;
+    font-size: 20px;
+}
+
+.dropdown-menu{
+    display: none; 
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    font-size: 20px;
+    background-color: rgb(202, 199, 199);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cover-page{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 80px;
+}
+
+.cover-content{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.home-service-icon{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.home-service-icon i, p{
+    font-size: 18px;
+}
+
+.cover-content h1{
+    font-size: 55px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    padding-right: 40px;
+    font-family: "Roboto", sans-serif;
+}
+
+.cover-content .cover-para{
+    margin-top: 18px;
+    padding: 0 30% 0 0;
+    line-height: 25px;
+    font-size: 20px;
+    color: gray;
+}
+
+.cover-content button{
+    margin-top: 25px;
+    background: linear-gradient(to bottom right, rgb(89, 192, 227), rgb(73, 73, 223));
+    outline: none;
+    border-style: none;
+}
+
+.cover-content button a{
+    background-color: transparent;
+}
+
+.coverImage{
+    height: 400px;
+    width: 550px;
+    border-radius: 10px;
+    -webkit-mask-image:linear-gradient(#000, rgba(0,0,0,0));
+    mask-image: linear-gradient(#000, rgba(0,0,0,0));
+}
+
+.services-section {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.services-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(103, 96, 96);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  gap: 20px;
+  padding: 0 14%;
+}
+
+.service-card {
+  background-color: rgb(179, 196, 243);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card h2{
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card i {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  border-style: none;
+  background-color: white;
+  color: rgb(63, 63, 232);
+  outline: none;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.showcase-section{
+    padding: 5% 15%;
+}
+
+.showcase-card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 20px;
+}   
+
+.showcase-card{
+    background-color: rgb(245, 241, 241);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.card1 h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.card1 p{
+    font-size: 18px;
+    color: gray;
+    margin-top: 30px;
+}
+
+.card2 .rating{
+    display: flex;
+}
+
+.card2 i{
+    color: rgb(64, 64, 189);
+    margin-top: 10px;
+}
+
+.card2 h2{
+    font-size: 28px;
+    margin: 0 0 0 8px;
+}
+
+.card2 h2+p{
+    font-size: 15px;
+    margin: 10px 0 0 2px;
+}
+
+.card2 .rating-para{
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.card2 h3{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.card2 h3+p{
+    margin-top: 5px;
+    color: gray;
+}
+
+.card2 img{
+    margin-top: 20px;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.card3 .company-logo{
+    display: flex;
+}
+
+.card3 i{
+    font-size: 40px;
+}
+
+.card3 .company-name{
+    font-size: 25px;
+    margin: 6px 5px;
+}
+
+.card3 .company-heading{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.card3 p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: gray;
+}
+
+.card3 img{
+    margin-top: 20px;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.subtitle{
+    display: flex;
+}
+
+.subtitle h1{
+    margin: 8px 0 0 10px;
+    font-size: 35px;
+}
+
+.subtitle i:first-child{
+    color: rgb(64, 64, 189);
+    margin: 20px 0 0 0;
+}
+
+.subtitle i:last-child{
+    color: rgb(64, 64, 189);
+    background-color: lightgray;
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 15px 15px;
+    margin: 0 0 0 35%;
+}
+
+.subtitle #icon{
+    margin: 0 0 0 50%;
+}
+
+.card4 li{
+    margin: 20px 0 0 30px;
+    font-size: 18px;
+}
+.card5 li{
+    margin: 20px 0 0 30px;
+    font-size: 18px;
+}
+.card6 li{
+    margin: 20px 0 0 30px;
+    font-size: 18px;
+}
+.process-section{
+    padding: 50px 0;
+}
+.process-section .process-grid{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 15%;
+}
+
+.process-section .process-heading, .process-para{
+    text-align: center;
+}
+
+.process-section h1{
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 400;
+}
+
+.process-section p{
+    color: gray;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.process-grid .process-box{
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.process-box i{
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border-style: none;
+    outline: none;
+    color: rgb(63, 63, 232);
+}
+
+.process-box h5{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.process-box p{
+    font-size: 15px;
+    color: gray;
+    padding: 0 20px 0 0;
+}
+.process-grid hr{
+    margin-top: 20px;
+    border-color: rgba(95, 122, 241, 0.829);   
+    border-style: 1px;
+}
+
+.workflow-section{ 
+    background-image: url("Abstract\ Img.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.workflow-section .workflow-content{
+    padding: 8% 30%;
+    text-align: center;
+}
+
+.workflow-users{
+    display: flex;
+    padding: 0 30%;
+}
+
+.workflow-users .user{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 4px 8px 15px gray;
+}
+
+.workflow-users .user2{
+    transform: scale(1.2);
+}
+
+.workflow-info{
+    color: white;
+    margin-top: 20px;
+}
+
+.workflow-info h1{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.workflow-info p{
+    padding: 0 60px;
+    font-size: 16px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+.workflow-section .workflow-btn{
+    display: flex;
+    padding: 5% 120px;
+}
+
+.workflow-btn .start-btn{
+    background: linear-gradient(to bottom right, rgb(232, 228, 228), rgb(52, 52, 247), rgb(17, 17, 239));
+}
+
+.workflow-section button{
+    margin: 0 30px;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.workflow-btn .demo-btn{    
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.footer-section{
+    padding: 10px 10px;
+}
+
+.footer-container{
+    padding: 0 10%;
+    display: grid;
+}
+
+.footer-logo{
+    display: flex;
+}
+
+.footer-logo i{
+    font-size: 40px;
+}
+
+.footer-logo h3{
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+}
+
+.footer-para{
+    margin-top: 20px;
+    color: gray;
+    line-height: 25px;
+}
+
+.footer-card{
+    padding: 50px 90px;
+}
+
+.footer-info{
+    grid-column: 1 / 3;
+}
+
+.footer-links{
+    gap: 70px;
+    grid-column: 4 / 6;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links-column li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.links-column a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 400;
+}
+
+.links-column h3{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.footer-section hr{
+    grid-column: 1 / 6;
+    border-color: lightgray;
+}
+
+.footer-bottom{
+    grid-column: 1 / 6;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+    position: relative;
+}
+
+.social-icons{
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between; 
+    position: absolute;
+    top: 10px;
+    right: 100px; 
+}
+
+.social-icons i{
+    background-color: white;
+    color: rgb(75, 75, 244);
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+
+@media (min-width:1025px) and (max-width:1224px){
+    header{
+        padding: 0 30px;
+    }
+    .logo-icon{
+        font-size: 28px;
+    }
+    .logo-name{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .nav-links li a{
+        font-size: 18px;
+    }
+    .nav-btn{
+        padding: 10px 30px;
+    }
+    .nav-btn a{
+        font-size: 17px;
+    }
+    .cover-page{
+        padding: 50px 50px;
+        justify-content: space-between;
+    }
+    .home-service-icon i,p{
+        font-size: 15px;
+    }
+    .cover-content h1{
+        font-size: 28px;
+    }
+    .cover-para{
+        padding: 0 20px 0 0;
+    }
+    .cover-content button{
+        font-size: 18px;
+    }
+    .coverImage{
+        height: 300px;
+        width: 450px;
+    }
+    .services-section{
+        padding: 50px 0;
+    }
+    .services-section h1{
+        font-size: 25px;
+    }
+    .services-grid{
+        padding: 10px 10px;
+        margin: 0 60px;
+        grid-template-columns: repeat(3, 280px);
+    }
+    .service-card{
+        padding: 30px;
+    }
+    .service-card h2{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .service-card i{
+        font-size: 15px;
+    }
+    .service-card p{
+        font-size: 14px;
+    }
+    .showcase-section{
+        padding: 20px 70px;
+    }
+    .showcase-card-grid{
+        grid-template-columns: repeat(3, 280px);
+        gap: 20px;
+    }
+    .card1{
+        grid-column: 1 / 2;
+    }
+    .card1 p{
+        font-size: 16px;
+    }
+    .card2 i{
+        font-size: 15px;
+    }
+    .card2 h2{
+        font-size: 25px;
+    }
+    .card2 .rating-para{
+        line-height: 20px;
+    }
+    .card2 h3{
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    .card2 img{
+        height: 200px;
+        width: 100%;
+    }
+    .card3 i{
+        font-size: 30px;
+    }
+    .card3 .company-name{
+        font-size: 20px;
+    }
+    .card3 .company-heading{
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .card3 p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: gray;
+    }
+    .card3 img{
+        height: 200px;
+        width: 100%;
+    }
+    .card4{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        padding: 10px 20px;
+    }
+    .card5{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        padding: 10px 20px;
+    }
+    .card6{
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        padding: 10px 20px;
+    }
+    .subtitle h1{
+        font-size: 25px;
+    }
+    .subtitle i:first-child{
+        margin: 15px 0 0 0;
+        font-size: 14px;
+    }
+    .subtitle i:last-child{
+        margin-left: 60px;
+    }
+    .subtitle #icon{
+        margin-left: 100px;
+    }
+    .card4 li{
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+    .card5 li{
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+    .card6 li{
+        font-size: 16px;
+        margin: 10px 20px;
+    }
+    .process-section{
+        padding: 60px 20px;
+    }
+    .process-section h1{
+        font-size: 28px;
+    }
+    .process-section p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .process-section .process-grid{
+        padding: 0 40px;
+    }
+    .process-grid .process-box{
+        padding: 20px 20px;
+    }
+    .process-box i{
+        font-size: 18px;
+        padding: 15px 15px;
+    }
+    .process-box h5{
+        font-size: 18px;
+    }
+    .process-box p{
+        font-size: 12px;
+    }
+    .workflow-section{
+        background-size: 100%;
+    }
+    .workflow-section .workflow-content{
+        padding: 10% 20%;
+    }
+    .workflow-users{
+        padding: 0 35%;
+    }
+    .workflow-users .user{
+        height: 60px;
+        width: 60px;
+    }
+    .workflow-info h1{
+        font-size: 28px;
+    }
+    .workflow-info p{
+        font-size: 14px;
+        padding: 0 70px;
+    }
+    .workflow-section .workflow-btn{
+        padding: 5% 120px;
+    }
+    .workflow-section button{
+        margin: 0 18px;
+        padding: 10px 20px;
+    }
+    .footer-container{
+        padding: 0px 20px;
+    }
+    .footer-logo h3{
+        font-size: 25px;
+        padding: 2px 0;
+    }
+    .footer-para{
+        font-size: 15px;
+    }   
+    .footer-links{
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .links-column a{
+        font-size: 15px;
+    }
+    .footer-section hr{
+        margin: 0 40px;
+    }
+    .footer-bottom{
+        padding: 20px 80px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1024px){
+    header{
+        padding: 8px 60px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-icon{
+        font-size: 25px;
+    }
+    .logo-name{
+        font-size: 20px;
+    }
+    header .nav-links, .header-btn{
+        display: none;
+    }
+    header .menu-toggle{
+        display: block;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+    .cover-page{
+        padding: 50px 50px;
+        justify-content: space-evenly;
+    }
+    .home-service-icon i,p{
+        font-size: 15px;
+    }
+    .cover-content h1{
+        font-size: 25px;
+    }
+    .cover-page .cover-para{
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 0 15px 0 0;
+    }
+    .cover-content button{
+        margin: 15px auto;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .coverImage{
+        margin: 0 10px;
+        height: 260px;
+        width: 320px;
+    }
+    .services-section{
+        padding: 30px 0;
+    }
+    .services-section h1{
+        font-size: 25px;
+    }
+    .services-grid{
+        padding: 10px 40px;
+        margin: 0 80px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-card{
+        padding: 30px;
+    }
+    .service-card h2{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .service-card i{
+        font-size: 14px;
+        padding: 12px;
+    }
+    .service-card p{
+        font-size: 12px;
+    }
+    .showcase-section{
+        padding: 20px 40px;
+    }
+    .showcase-card-grid{
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 75px;
+        gap: 20px;
+    }
+    .card1{
+        grid-column: 1 / 7;
+    }
+    .card1 h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .card1 p{
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .card2{
+        padding: 10px 20px;
+        grid-column: 1 / 4;  
+    }
+    .card2 i{
+        font-size: 15px;
+        margin-top: 10px;
+        color: rgb(64, 64, 189); 
+    }
+    
+    .card2 h2{
+        font-size: 24px;
+        margin: 0 0 0 8px;
+    }
+    
+    .card2 h2+p{
+        font-size: 15px;
+        margin: 10px 0 0 2px;
+    }
+
+    .card2 .rating-para{
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .card2 h3{
+        margin-top: 20px;
+        font-size: 22px;
+    }
+    .card2 img{
+        height: 200px;
+        width: 100%;
+    }
+    .card3{ 
+        padding: 10px 20px;
+        grid-column: 4 / 7;  
+    }
+    .company-logo i{
+        font-size: 30px;
+    }
+    .card3 .company-name{
+        font-size: 20px;
+        margin: 5px 5px;
+    }
+    .card3 .company-heading{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .card3 p{
+        margin-top: 15px;
+        font-size: 14px;
+        color: gray;
+    }
+    .card3 img{
+        height: 200px;
+        width: 100%;
+    }
+    .card4{
+        grid-column: 1 / 3;
+    }
+    .card5{
+        grid-column: 3 / 5;
+    }
+    .card6{
+        grid-column: 5 / 7;        
+    }   
+    .subtitle h1{
+        font-size: 25px;
+    }
+    .subtitle i:first-child{
+        font-size: 12px;
+    }
+    .subtitle i:last-child{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .subtitle #icon{
+        margin-left: 70px;
+    }
+    .card4 li{
+        font-size: 14px;
+        margin: 14px 0 0 20px;
+    }
+    .card5 li{
+        font-size: 14px;
+        margin: 14px 0 0 20px;
+    }
+    .card6 li{
+        font-size: 14px;
+        margin: 14px 0 0 20px;
+    }
+    .process-section{
+        padding: 40px 30px;
+    }
+    .process-section h1{
+        font-size: 25px;
+    }
+    .process-section p{
+        font-size: 12px;
+    }
+    .process-section .process-grid{
+        padding: 2% 8%;
+    }
+    .process-grid .process-box{
+        padding: 25px;
+        margin: 2px;
+    }
+    .process-grid hr{
+        display: none;
+    }
+    .process-box i{
+        font-size: 14px;
+        padding: 15px;
+    }
+    .process-box h5{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .process-box p{
+        margin-top: 12px;
+        font-size: 13px;
+    }
+    .workflow-section{
+        background-size: 100%;
+    }
+    .workflow-users .user{
+        height: 50px;
+        width: 50px;
+    }
+    .workflow-info h1{
+        font-size: 24px;
+    }
+    .workflow-info p{
+        font-size: 14px;
+        padding: 0 30px;
+    }
+    .workflow-section .workflow-btn{
+        padding: 20px 20px;
+    }
+    .workflow-btn .btn{
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .footer-container{
+        padding: 0px 20px;
+    }
+    .footer-logo h3{
+        font-size: 24px;
+        padding: 10px 0;
+    }
+    .footer-para{
+        font-size: 14px;
+        margin-top: 5px;
+    }   
+    .footer-links{
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .links-column a{
+        font-size: 14px;
+    }
+    .footer-section hr{
+        margin: 0 40px;
+    }
+    .footer-bottom{
+        padding: 20px 100px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    header{
+        padding: 8px 30px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-icon{
+        font-size: 25px;
+    }
+    .logo-name{
+        font-size: 18px;
+        margin-top: 2px;
+    }
+    header .nav-links, .header-btn{
+        display: none;
+    }
+    header .menu-toggle{
+        display: block;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .cover-page{
+        padding: 40px 40px;
+        justify-content: space-evenly;
+    }
+    .home-service-icon i,p{
+        font-size: 14px;
+    }
+    .cover-content h1{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .cover-page .cover-para{
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 0 80px 0 0;
+    }
+    .cover-content button{
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .coverImage{
+        display: none;
+    }
+    .services-section{
+        padding: 10px 0;
+    }
+    .services-section h1{
+        font-size: 20px;
+    }
+    .services-grid{
+        padding: 0 8%;
+        grid-template-columns: repeat(3, 200px);
+    }
+    .service-card{
+        padding: 20px;
+    }
+    .service-card h2{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .service-card i{
+        font-size: 12px;
+        padding: 12px;
+    }
+    .service-card p{
+        font-size: 10px;
+    }
+    .showcase-section{
+        padding: 20px 40px;
+    }
+    .showcase-card-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 60px);
+        padding: 10px 10px;
+    }
+    .card1{
+        text-align: center;
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+    }
+    .card1 h1{
+        font-size: 20px;
+    }
+    .card1 p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .card2{
+        padding: 10px;
+        grid-column: 3 / 5;
+        grid-row: 1 / 4;
+    }
+    .card2 i{
+        font-size: 12px;
+        margin-top: 10px;
+        color: rgb(64, 64, 189); 
+    }
+
+    .card2 h2{
+        font-size: 22px;
+        margin: 0 0 0 8px;
+    }
+
+    .card2 h2+p{
+        font-size: 12px;
+        margin: 8px 0 0 2px;
+    }
+
+    .card2 .rating-para{
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 15px;
+    }
+
+    .card2 h3{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .card2 img{
+        display: none;
+    }
+    .card3{
+        padding: 20px;
+        grid-column: 1 / 3;
+        grid-row: 4 / 8;
+    }
+    .company-logo i{
+        font-size: 20px;
+    }
+    .card3 .company-name{
+        font-size: 14px;
+        margin: 2px 5px;
+    }
+
+    .card3 .company-heading{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card3 p{
+        margin-top: 10px;
+        font-size: 14px;
+        color: gray;
+    }
+    .card3 img{
+        display: none;
+    }
+    .card4{
+        grid-column: 3 / 4;
+        grid-row: 4 / 6;
+    }
+    .card5{
+        grid-column: 4 / 5;
+        grid-row: 4 / 6;
+    }
+    .card6{
+        grid-column: 3 / 5;
+        grid-row: 6 / 8;
+    }
+    .subtitle h1{
+        font-size: 20px;
+        margin: 2px 0 0 2px;
+    }
+    .subtitle i:first-child{
+        display: none;
+    }
+    .subtitle i:last-child{
+        margin-left: 18px;
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .subtitle #icon{
+        margin-left: 35px;
+    }
+    .card4 li{
+        font-size: 14px;
+        margin: 20px 0 0 10px;
+    }
+    .card5 li{
+        font-size: 14px;
+        margin: 20px 0 0 10px;
+    }
+    .card6 li{
+        font-size: 14px;
+        margin: 20px 0 0 10px;
+    }
+    .process-section{
+        padding: 20px 20px;
+    }
+    .process-section h1{
+        font-size: 25px;
+    }
+    .process-section p{
+        font-size: 15px;
+    }
+    .process-section .process-grid{
+        display: block;
+        padding: 10px 0;
+        margin: 0 20px;
+    }
+    .process-grid .process-box{
+        margin: 10px 10px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .process-grid hr{
+        display: none;
+    }
+    .process-box i{
+        font-size: 13px;
+        padding: 15px 15px;
+    }
+    .process-box h5{
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .process-box p{
+        margin-top: 12px;
+        padding: 0 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .workflow-section{
+        background-size: 100%;
+    }
+    .workflow-section .workflow-content{
+        padding: 10% 20%;
+    }
+    .workflow-users .user{
+        height: 50px;
+        width: 50px;
+    }
+    .workflow-info h1{
+        font-size: 24px;
+    }
+    .workflow-info p{
+        font-size: 14px;
+        padding: 0;
+    }
+    .workflow-section .workflow-btn{
+        padding: 20px 60px;
+    }
+    .workflow-btn button{
+        font-size: 14px;
+        padding: 10px 10px;
+        margin: 0 25px;
+    }
+    .footer-section{
+        padding: 0; 
+    }
+    .footer-container{
+        padding: 0px 20px;
+    }
+    .footer-card{
+        padding: 30px 30px;
+    }
+    .footer-logo i{
+        font-size: 30px;
+    }
+    .footer-logo h3{
+        font-size: 20px;
+    }
+    .footer-para{
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 20px;
+    }   
+    .footer-links{
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .links-column h3{
+        font-size: 20px;
+    }
+    .links-column li{
+        padding-top: 5px;
+    }
+    .links-column a{
+        font-size: 14px;
+    }
+    .footer-section hr{
+        margin: 0 40px;
+    }
+    .footer-bottom{
+        padding: 20px 100px;
+    }
+    .footer-bottom .social-icons{
+        font-size: 18px;
+    }
+}
+
+@media (min-height: 481px) and (max-width: 767px){
+    header{
+        padding: 0 25px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-icon{
+        font-size: 20px;
+    }
+    .logo-name{
+        font-size: 15px;
+    }
+    header .nav-links, .header-btn{
+        display: none;
+    }
+    header .menu-toggle{
+        display: block;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .cover-page{
+        padding: 40px 40px;
+        justify-content: space-evenly;
+    }
+    .home-service-icon i,p{
+        font-size: 12px;
+    }
+    .cover-content h1{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .cover-page .cover-para{
+        font-size: 12px;
+        margin-top: 8px;
+        padding: 0 50px 0 0;
+        line-height: 20px;
+    }
+    .cover-content button{
+        margin: 10px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .coverImage{
+        display: none;
+    }
+    .services-section{
+        padding: 10px 0;
+    }
+    .services-section h1{
+        font-size: 20px;
+    }
+    .services-grid{
+        padding: 10px 30px;
+        grid-template-columns: repeat(2, 200px);
+    }
+    .service-card{
+        padding: 20px;
+    }
+    .service-card h2{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .service-card i{
+        font-size: 12px;
+        padding: 12px;
+    }
+    .service-card p{
+        font-size: 10px;
+    }
+    .showcase-section{
+        padding: 20px 30px;
+    }
+    .showcase-card-grid{
+        display: grid;
+        grid-template-columns: 420px;
+        padding: 10px 0px;
+    }
+    .card1{
+        text-align: center;
+    }
+    .card1 h1{
+        font-size: 20px;
+    }
+    .card1 p{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .card2{
+        padding: 10px;
+    }
+    .card2 i{
+        font-size: 12px;
+        margin-top: 10px;
+        color: rgb(64, 64, 189); 
+    }
+
+    .card2 h2{
+        font-size: 22px;
+        margin: 0 0 0 8px;
+    }
+
+    .card2 h2+p{
+        font-size: 12px;
+        margin: 8px 0 0 2px;
+    }
+
+    .card2 .rating-para{
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 15px;
+    }
+
+    .card2 h3{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .card2 img{
+        display: none;
+    }
+    .card3{
+        padding: 10px;
+    }
+    .company-logo i{
+        font-size: 20px;
+    }
+    .card3 .company-name{
+        font-size: 14px;
+        margin: 2px 5px;
+    }
+
+    .card3 .company-heading{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card3 p{
+        margin-top: 10px;
+        font-size: 14px;
+        color: gray;
+    }
+    .card3 img{
+        display: none;
+    }
+
+    .subtitle h1{
+        font-size: 20px;
+        margin: 2px 0 0 2px;
+    }
+    .subtitle i:first-child{
+        display: none;
+    }
+    .subtitle i:last-child{
+        margin-left: 18px;
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .subtitle #icon{
+        margin-left: 35px;
+    }
+    .card4 li{
+        font-size: 14px;
+        margin: 20px 0 0 20px;
+    }
+    .card5 li{
+        font-size: 14px;
+        margin: 20px 0 0 20px;
+    }
+    .card6 li{
+        font-size: 14px;
+        margin: 20px 0 0 20px;
+    }
+    .process-section{
+        padding: 20px 30px;
+    }
+    .process-section h1{
+        font-size: 25px;
+    }
+    .process-section p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .process-section .process-grid{
+        display: block;
+        padding: 10px 0;
+        margin: 0 20px;
+    }
+    .process-grid .process-box{
+        margin: 10px 10px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .process-grid hr{
+        display: none;
+    }
+    .process-box i{
+        font-size: 13px;
+        padding: 15px 15px;
+    }
+    .process-box h5{
+        margin-top: 12px;
+        font-size: 13px;
+    }
+    .process-box p{
+        margin-top: 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .workflow-section{
+        background-size: 100%;
+    }
+    .workflow-section .workflow-content{
+        padding: 10% 12%;
+    }
+    .workflow-users{
+        padding: 0 34%;
+    }
+    .workflow-users .user{
+        height: 40px;
+        width: 40px;
+    }
+    .workflow-info h1{
+        font-size: 20px;
+    }
+    .workflow-info p{
+        font-size: 12px;
+        padding: 0;
+    }
+    .workflow-section .workflow-btn{
+        padding: 20px 20px;
+    }
+    .workflow-btn button{
+        font-size: 12px;
+        padding: 10px 10px;
+        margin: 0 28px;
+    }
+    .footer-section{
+        padding: 0; 
+    }
+    .footer-container{
+        display: block;
+        padding: 0px 20px;
+    }
+    .footer-card{
+        padding: 30px 30px;
+    }
+    .footer-logo i{
+        font-size: 20px;
+    }
+    .footer-logo h3{
+        font-size: 18px;
+    }
+    .footer-para{
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 20px;
+    }   
+    .footer-links{
+        padding-top: 2px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .links-column h3{
+        font-size: 18px;
+    }
+    .links-column li{
+        padding-top: 5px;
+    }
+    .links-column a{
+        font-size: 14px;
+    }
+    .footer-section hr{
+        margin: 0 40px;
+    }
+    .footer-bottom{
+        padding: 20px 35px;
+    }
+    .footer-bottom .social-icons{
+        display: block;
+        font-size: 14px;
+        right: 25px;
+    }
+}
